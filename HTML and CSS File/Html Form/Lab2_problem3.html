@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Leave Form</title>
+    <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .div1{
+        margin-top: 70px;
+        margin-left: 400px;
+        width: 37%;
+        height: 542px;
+        border: 2px black solid;
+
+    }
+
+    h2{
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+    form input{
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .Farabi{
+        padding-left: 10px;
+    }
+    .MoreAction{
+        height: 40px;
+        width: 100%;
+        background-color: yellow;
+        display: flex;
+    }
+    .bottom{
+        height: 40px;
+        width: 100%;
+        background-color: LightGray  ;
+        text-align: center;
+    }
+    form select{
+        height: 30px;
+        margin-left: 5px;
+    }
+
+    .button2 {
+        position: relative;
+        top: 20%;
+        margin: 1.5px;
+        border: .5px black solid;
+        background-color: DarkKhaki;
+        height: 20px;
+        width: 100px;
+    }
+    .dropdown{
+        padding-left: 50px;
+        padding-top: 10px;
+
+    }
+    .menu{
+        display: none;
+    }
+
+
+    .select1{
+        margin-top: 12px;
+        height:20px;
+        background-color:rgba(255,255,255,0);
+        border-style: solid;
+    }
+
+    .select1 option {
+        margin: 40px;
+        background-color: White;
+        color:red;
+      }
+
+    </style>
+</head>
+<body>
+
+<div class="div1">
+
+
+    <form   action="">
+
+             <div class="MoreAction">
+                <h2 > Leave Form</h2>
+                <label class="dropdown" for="MoreAction">More Actions</label>
+                <select class="select1">
+                    <option></option>
+                    <option value="1">Action 1</option>
+                    <option value="2">Action 2</option>
+                    <option value="3">Action 3</option>
+                    <option value="4">Action 4</option>
+                  </select>
+
+
+
+            </div>
+
+
+        <table cellspacing="2">
+
+            <tr >
+                <td class="Farabi"> Employee Email </td>
+                <td> <input type="text" name="First name" size="35" placeholder="nihadfarabi@gmail.com"></td>
+            </tr>
+
+            <tr>
+                <td  class="Farabi"> Employee ID </td>
+                <td> <input type="text" name="Last Name" size="35" placeholder="1234"></td>
+            </tr>
+
+            <tr >
+                <td  class="Farabi">Employee Name: </td>
+                <td> <input type="text" name="Company Name:" size="35" placeholder="Farabi Hossain"></td>
+            </tr >
+
+            <tr>
+                <td class="Farabi"> Designation </td>
+                <td> <input type="text" name="Comapny/Personal Website" size="35" placeholder="Team Leader"></td>
+            </tr>
+
+            <tr >
+                <td class="Farabi"> Leave type <span style="color:red">*</span> </td>
+                    <td>
+                    <select >
+                        <option>-Select-</option>
+                        <option>Paternity leave</option>
+                        <option>Medical leave</option>
+                        <option>Jury duty</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="Farabi"> Form <span style="color:red">*</span> </td>
+                <td><input type="Date" name="f_date" id="date" required="required"><br/>
+            </tr>
+
+            <tr>
+                <td class="Farabi"> To <span style="color:red">*</span> </td>
+                <td><input type="Date" name="t_date" id="date" required="required" ><br/>
+            </tr>
+
+            <tr>
+                <td class="Farabi"> No of Days </td>
+                <td> <input type="text" name="Phone:" size="20">  </td>
+            </tr>
+
+
+
+
+
+            <tr>
+                <td class="Farabi">  Reason :</td><br>
+                <td>
+                    <textarea cols="40" rows="7"  name="comments" ></textarea> <br>
+                </td>
+            </tr>
+
+        </table>
+        <div class="bottom">
+            <button class="button2">Submit</button>
+            <button class="button2">Reset</button>
+        </div>
+    </form>
+
+</div>
+
+</body>
+
+</html>

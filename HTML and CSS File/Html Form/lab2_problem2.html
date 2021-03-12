@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Resgistration Form</title>
+    <style>
+    .div{
+      text-align: center;
+      background-color: lightblue;
+      width: 500px;
+      border: 15px;
+      padding: 50px;
+      margin-left: 370px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="div">
+    <h1> <center> <u> Resgistration Form </u> </center></h1><br>
+
+
+    <form>
+      <label for="fname"> First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname"> Last name:</label>
+      <input type="text" id="lname" name="lname"> <br> <br>
+      <label for="age">Age:</label>
+      <input style="margin-left: 3%; "type="number" name="number" value="number"><br><br>
+      <label for="email"> Email:</label>
+      <input style="margin-left: 2%; "type="email" id="email" name="email"> <br> <br>
+      <label for="pwd">Password:</label>
+      <input style="margin-left: 0.7%; "type="password" name="pwd" id="pwd"><br><br>
+       <label for="sex">SEX::</label>
+      <input type="radio" name="gender" id="male" value="male">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="female">Female</label><br><br>
+      <label for="check">Checkbox:</label>
+      <input type="checkbox" name="student/businessman" value="student">
+      <label for="check">I am a student</label>
+      <input type="checkbox" name="student/businessman" value="businessman">
+      <label for="check">I am a business man</label>
+      <p>Birthday:</p>
+      <label for="quantity">Day:</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="31">
+      <label for="quantity">Month:</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="12">
+      <label for="quantity">Year:</label>
+      <input type="number" id="quantity" name="quantity" min="1950" max="2020"><br><br>
+
+      <label for="submit">Submit Button</label>
+      <input type="submit" value="Submit"><br><br>
+
+      <label for="reset">Submit Button</label>
+      <input type="reset" value="Reset">
+
+    </form>
+  </div>
+
+  </body>
+</html>
