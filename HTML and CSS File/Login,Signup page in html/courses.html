@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cssfile/courses.css">
+    <title>courses</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="left" style="background-color:rgb(2, 23, 39);">
+            <h2>Menu</h2>
+            <a id="home" href="#">Home</a>
+            <!--home-->
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+            <ul id="myMenu">
+                <li><a href="#">Class 6</a></li>
+                <li><a href="#">class 7</a></li>
+                <!--link-->
+                <li><a href="#">class 8</a></li>
+                <li><a href="#">class 9</a></li>
+                <li><a href="#">class 10</a></li>
+
+            </ul>
+        </div>
+
+        <div class="right" style="background-color:#ddd;">
+
+            <!-- pic -->
+            <section>
+                <img class="pic" src="pic/class.jpg" style="width:100%">
+            </section>
+        </div>
+
+
+
+
+
+
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("mySearch");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myMenu");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+
+</body>
+</html

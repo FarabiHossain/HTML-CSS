@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cssfile/homepage.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="left" style="background-color:rgb(2, 23, 39);">
+            <h2>Menu</h2>
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+            <ul id="myMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Student Info</a></li>
+                <!--link-->
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Task</a></li>
+                <li><a href="#">Appointment</a></li>
+
+            </ul>
+        </div>
+
+        <div class="right" style="background-color:#ddd;">
+
+            <!-- Slide Show -->
+            <section>
+                <img class="mySlides" src="pic/pic1.jpg" style="width:100%">
+                <img class="mySlides" src="pic/pic2.jpg" style="width:100%">
+                <img class="mySlides" src="pic/pic3.jpg" style="width:100%">
+            </section>
+
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+
+
+</body>
+
+</html>
